@@ -1,5 +1,5 @@
 {
-  "name": "react-native-banner-carousel",
+  "name": "@webileapps/react-native-banner-carousel",
   "version": "1.0.3",
   "description": "a carousel component for React Native",
   "main": "out/index.js",
@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/f111fei/react-native-banner-carousel",
   "devDependencies": {
-    "@types/react-native": "^0.46.9"
+    "@types/react-native": "^0.46.9",
+    "typescript": "^3.1.3"
   }
 }

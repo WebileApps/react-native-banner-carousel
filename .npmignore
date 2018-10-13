@@ -4,3 +4,4 @@ images
 examples
 tsconfig.json
 npm-debug.log
+yarn.lock

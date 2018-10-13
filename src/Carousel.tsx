@@ -115,6 +115,10 @@ export default class Carousel extends React.Component<CarouselProps, CarouselSta
         } else {
             this.stopAutoPlay();
         }
+        if (this.props.index !== nextProps.index 
+                &&typeof nextProps.index !== "undefined") {
+            this.gotoPage(nextProps.index);
+        }
     }
 
     private startAutoPlay() {
@@ -183,6 +187,9 @@ export default class Carousel extends React.Component<CarouselProps, CarouselSta
 
     private gotoPage(index: number, animated: boolean = true, cb = () => { }) {
         const childrenNum = this.getChildrenNum();
+        if (this.currentIndex == index) {
+            return cb();
+        }
         if (childrenNum <= 1) {
             return cb();
         }
