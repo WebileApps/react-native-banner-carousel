@@ -1,6 +1,6 @@
 {
   "name": "@webileapps/react-native-banner-carousel",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a carousel component for React Native",
   "main": "out/index.js",
   "typings": "out/index.d.ts",
@@ -23,6 +23,7 @@
     "react-native-swiper",
     "react-native-carousel"
   ],
+  "files": ["out"],
   "author": "xzper",
   "license": "MIT",
   "bugs": {
